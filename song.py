@@ -1,6 +1,6 @@
 # rite your code here!
 class Song:
-    def __init__(self, name , artist, length.float()):
+    def __init__(self, name , artist, length):
         self.title = name
         self.artist = artist
         self.length = length
