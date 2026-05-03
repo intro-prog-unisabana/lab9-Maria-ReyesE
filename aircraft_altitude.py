@@ -5,7 +5,7 @@ def main():
     aircraft = Aircraft(model)
 
     while True:
-        command = input("Enter command (A for ascent, D for descent, X to exit):\n")
+        command = input("Enter command (A for ascent, D for descent, X to exit):\n").strip()
 
         if command == "X":
             break
@@ -19,7 +19,7 @@ def main():
         elif action == "D":
             aircraft.descend(feet)
 
-    print(f"Final altitude: {aircraft.altitude} feet")
+    print(aircraft.altitude)
 
 if __name__ == "__main__":
     main()
