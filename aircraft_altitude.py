@@ -1,7 +1,7 @@
 from aircraft import Aircraft
 
 def main():
-    model = input("Enter aircraft model:\n").strip()
+    model = input("Enter aircraft model:\n")
     aircraft = Aircraft(model)
 
     while True:
@@ -10,26 +10,17 @@ def main():
         if command == "X":
             break
 
-        parts = command.strip().split()
-
-        if len(parts) < 2:
-            continue
-
-        action = parts[0].strip()
-        feet_str = parts[1].strip()
-
-        if not feet_str.lstrip('-').isdigit():
-            continue
-
-        feet = int(feet_str)
+        parts = command.split()
+        action = parts[0]
+        feet = int(parts[1])
 
         if action == "A":
-            aircraft.ascend(feet)
+            aircraft.climb(feet)   # 🔥 aquí está el fix
         elif action == "D":
             aircraft.descend(feet)
 
     print(f"Final altitude: {aircraft.altitude} feet")
 
 if __name__ == "__main__":
-    main() 
+    main()
     
