@@ -19,7 +19,7 @@ def main():
         elif action == "D":
             aircraft.descend(feet)
 
-    print(aircraft.altitude)
+    print(f"Final altitude: {aircraft.get_altitude()} feet")
 
 if __name__ == "__main__":
     main()
