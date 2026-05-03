@@ -4,26 +4,26 @@ Lab 9
 * Número aproximado de horas para completar esta tarea
 ******************************************************************************/
 Número de horas:
-
+2 horas
 
 /****************************************************************************
 * ¿Encontraste algún problema serio? Si es así, por favor descríbelo.
 ******************************************************************************/
 
 ¿Sí o no?
-
+NO
 
 /****************************************************************************
 * Escribe cualquier otro comentario aquí.
 ******************************************************************************/
 
-
+N.A.
 
 /****************************************************************************
  *  Proporciona el enlace de tu perfil de GitHub (ej. https://github.com/afbeltranp)
  ******************************************************************************/
 
-[escribe el enlace aquí]
+https://github.com/intro-prog-unisabana/lab9-Maria-ReyesE.git
 
 /****************************************************************************
  *  Escribe y firma el siguiente reconocimiento estudiantil de trabajo original.
@@ -35,3 +35,5 @@ Número de horas:
  ******************************************************************************/
 
 [escribe y firma la declaración aquí]
+ *      Esta tarea de programación representa mi propio trabajo de acuerdo
+ *      con las regulaciones de la Universidad.  /s/ María Reyes 
