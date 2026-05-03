@@ -11,15 +11,19 @@ def main():
             break
 
         parts = command.split()
-        action = parts[0]
-        feet = int(parts[1])
+
+        # 🔥 Validar que tenga 2 partes
+        if len(parts) != 2:
+            continue
+
+        action, feet = parts[0], int(parts[1])
 
         if action == "A":
             aircraft.ascend(feet)
         elif action == "D":
             aircraft.descend(feet)
 
-    print(f"Final altitude: {aircraft.get_altitude()} feet")
+    print(f"Final altitude: {aircraft.altitude} feet")
 
 if __name__ == "__main__":
     main()
