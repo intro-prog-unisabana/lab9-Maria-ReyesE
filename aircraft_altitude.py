@@ -12,11 +12,16 @@ def main():
 
         parts = command.split()
 
-        # 🔥 Validar que tenga 2 partes
+        # 🔒 Validar estructura
         if len(parts) != 2:
             continue
 
-        action, feet = parts[0], int(parts[1])
+        action = parts[0]
+
+        try:
+            feet = int(parts[1])
+        except:
+            continue  # evita crash si algo raro entra
 
         if action == "A":
             aircraft.ascend(feet)
